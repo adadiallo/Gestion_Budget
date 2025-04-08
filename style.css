@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img {
+  width: 311px;
+  height: 192px;
+  margin: auto;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+span {
+  font-size: 14px;
+  color: #0c5e69;
+  text-align: center;
+  margin-top: -60px;
+}
+.section-card {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  width: 200px;
+  height: 80px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.card p{
+ text-align: center; 
+}
+.budget{
+    background-color: rgba(12, 94, 105, 1);
+    color: #FFFF;
+    padding: 5px 0 5px 0 ;
+    font-size: 16px;
+}
+.cfa{
+    padding: 15px 0 15px 0 ;
+
+}
+.section-tableaux{
+margin-top: 50px;
+margin-left: 110px;
+margin-right: 110px;
+}
+.section-tableaux h2{
+    font-size: 32px;
+    color: rgba(209, 192, 0, 1);
+
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+th{
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #0c5e69;
+
+    color: #FFFF;
+
+}
+th, td {
+    border: 1px solid rgba(230, 230, 230, 1);
+    padding: 10px;
+    text-align: left;
+  }
+  td{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .btn{
+    background-color: #ff5b5b;
+    border: none;
+    padding: 8px;
+  }
+  a{
+    text-decoration: none;
+    color: #FFF;
+
+  }
+  .ajout-rv{
+      color: rgba(209, 192, 0, 1);
+     
+  }
+  
+  .btn2{
+    color: rgba(209, 192, 0, 1);
+    border-radius: 50%;
+    border: 1px solid rgba(209, 192, 0, 1);
+    background-color: #FFF;
+    padding: 4px;
+
+    
+}
+/* ------------------------------------------AJOUT-DEPENSES------------------ */
+.formulaire{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulaire h1{
+    color: rgba(12, 94, 105, 1);
+    font-size: 24px;
+}
+.form{
+    margin-top: 30px;
+}
+.input{
+    margin-bottom: 20px;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgba(230, 230, 230, 1);
+    margin-top: 10px;
+    padding: 3px 0 3px 0;
+}
+label{
+    color: #0c5e69;
+    text-transform: uppercase;
+}
+.btn-input{
+    background-color: rgba(12, 94, 105, 1);
+    text-align: center;
+    color: #FFF;
+}
