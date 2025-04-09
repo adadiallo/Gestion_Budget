@@ -1,0 +1,34 @@
+@media(width <= 576px){
+
+.section-card{
+    flex-direction: column;
+
+
+}
+.card{
+    width: 500px;
+    margin: auto;
+margin-bottom: 20px;
+}
+.section-tableaux{
+    width: 500px;
+    margin: auto;
+}
+
+}
+@media(width <= 768px){
+    .section-card{
+        /* flex-direction: column; */
+    
+    
+    }
+   
+    
+    
+}
+@media(width <= 992px){
+    .card{
+        margin: 20px;
+    }
+
+}
