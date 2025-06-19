@@ -32,15 +32,19 @@
     </div>
     <div class="formulaire">
       <h1>Ajouter revenu</h1>
-      <form action="" class="form">
-        <div class="input"><label for="">Titre</label>  <br>
-            <input type="text" /></div>
+       <form action="" class="form">
+        <div class="input">
+          <label for="ajoutRevenu">Titre</label> <br />
+          <input type="text" name="ajoutRevenu" id="ajoutRevenu" />
+          <p class="error" id="errorRevenu"></p>
+        </div>
 
         <div class="input">
-          <label for="" >Montant</label> <br>
-          <input type="texte" placeholder="FCFA" />
+          <label for="montantRevenu">Montant</label> <br />
+          <input type="number" placeholder="FCFA" id="montantRevenu" />
+          <p class="error" id="errorMontantRevenu"></p>
         </div>
-        <input type="submit" value="VALIDER" class="btn-input">
+        <input type="submit" value="VALIDER" id="boutonAjoutRevenu" />
       </form>
     </div>
   </body>

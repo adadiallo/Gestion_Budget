@@ -53,7 +53,7 @@ margin-top: 50px;
 margin-left: 60px;
 margin-right: 60px;
 }
-.section-tableaux h2{
+.title-tableau{
     font-size: 32px;
     color: rgba(209, 192, 0, 1);
 
@@ -83,6 +83,8 @@ th, td {
     background-color: #ff5b5b;
     border: none;
     padding: 8px;
+    color: white;
+    cursor: pointer;
   }
   a{
     text-decoration: none;
@@ -100,20 +102,38 @@ th, td {
     border: 1px solid rgba(209, 192, 0, 1);
     background-color: #FFF;
     padding: 4px;
-
-    
+float: right;    
 }
+/* .revenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+.icone{
+  color: rgba(209, 192, 0, 1);
+  font-size: 12px;
+  padding: 3px;
+}
+
 /* ------------------------------------------AJOUT-DEPENSES------------------ */
 .formulaire{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.title-form{
+text-align: center;
+padding: 15px 0;
+}
+.champ{
+  padding-left: 5px;
+}
 .formulaire h1{
     color: rgba(12, 94, 105, 1);
     font-size: 24px;
+    text-align: center;
 }
 .form{
     margin-top: 30px;
@@ -136,4 +156,64 @@ label{
     background-color: rgba(12, 94, 105, 1);
     text-align: center;
     color: #FFF;
+}
+.error{
+  color: red;
+}
+/* ====================================MODAL================ */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #0c5e69; */
+/* margin-bottom: -30px; */
+  background-color: #fefefe;
+  margin: auto;
+  /* padding: 20px; */
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.input{
+    /* background-color: red; */
+margin-left: 20px;
 }

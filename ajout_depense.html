@@ -32,16 +32,23 @@
     </div>
     <div class="formulaire">
       <h1>Ajouter depense</h1>
+      <p class="error"  id="errorEnvoie"></p>
+
       <form action="" class="form">
-        <div class="input"><label for="">Titre</label>  <br>
-            <input type="text" /></div>
+        <div class="input">
+          <label for="ajoutDepense">Titre</label> <br />
+          <input type="text" name="ajoutDepense" id="ajoutDepense" />
+          <p class="error" id="errorDepense"></p>
+        </div>
 
         <div class="input">
-          <label for="" >Montant</label> <br>
-          <input type="texte" placeholder="FCFA" />
+          <label for="montant">Montant</label> <br />
+          <input type="number" placeholder="FCFA" id="montant" />
+          <p class="error" id="errorMontant"></p>
         </div>
-        <input type="btn" value="VALIDER" class="btn-input">
+        <input type="submit" value="VALIDER" id="boutonAjout" />
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

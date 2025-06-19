@@ -12,11 +12,10 @@
       rel="stylesheet"
     />
 
-
     <!-- -----------------FONT FAMILY------------------ -->
     <!-- -----------------------------------STYLE CSS----------------- -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="mobile.css" />
     <!-- -------------------------------FONT AWESOME ICONE-------------------- -->
     <link
       rel="stylesheet"
@@ -32,29 +31,65 @@
 
       <span>Gestion du budget</span>
     </div>
-     <div class="section-card">
+    <div class="section-card">
       <div class="card">
-        <p class="budget">Budget</p>
-        <p class="cfa">120.000F CFA</p>
+        <p class="budget" >Budget</p>
+        <p class="cfa" id="totalBudget">0</p>
       </div>
       <div class="card">
         <p class="budget">Dépenses</p>
-        <p class="cfa">100.000F CFA</p>
+        <p class="cfa" id="totalDepense">0 CFA</p>
       </div>
       <div class="card">
         <p class="budget">Solde</p>
-        <p class="cfa">20.000F CFA</p>
+        <p class="cfa" id="solde">0 </p>
       </div>
     </div>
-     <div class="section-tableaux">
-      <h2>Liste des dépenses</h2>
+    <div class="modal" id="modalContact">
+      <div class="modal-content">
+        <span class="close"> X </span>
+        <div class="logo">
+          <img src="./Images/Group 5.png" alt="" class="img" />
+
+          <span>Gestion du budget</span>
+        </div>
+        <div>
+
+          <form action="" class="formulaire">
+                      <h1 class="title-form">Ajouter depense</h1>
+          <p class="error" id="errorEnvoie"></p>
+
+            <div class="input">
+              <label for="ajoutDepense">Titre</label> <br />
+              <input type="text" name="ajoutDepense" id="ajoutDepense" class="champ" />
+              <p class="error" id="errorDepense"></p>
+            </div>
+
+            <div class="input">
+              <label for="montant">Montant</label> <br />
+              <input type="number" placeholder="" id="montant"  class="champ" />
+              <p class="error" id="errorMontant"></p>
+            </div>
+            <div class="input">
+              <input type="submit" value="VALIDER" id="boutonAjout" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="section-tableaux" id="tableauDepense">
+      <!-- <h2>Liste des dépenses</h2> -->
       <table class="table">
-        <tr>
-          <th>Titre</th>
-          <th>Montant</th>
-          <th>Actions</th>
-        </tr>
-        <tr>
+        <thead>
+          <tr>
+            <th>Titre</th>
+            <th>Montant</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody class="tbody">
+          <!-- <tr>
           <td>Nourriture</td>
           <td>40.000FCFA</td>
           <td>
@@ -74,47 +109,100 @@
           <td>
             <button class="btn"><a href="">supprimer</a></button>
           </td>
-        </tr>
+        </tr>  -->
+          <!-- <tr>               
+           <td>
+            <span class="ajout-rv"
+              >Ajouter dépenses
+              <button class="btn2">
+                <a href="./ajout_depense.html"
+                  ><i class="fa-solid fa-plus icone"></i
+                ></a>
+              </button>
+            </span>
+          </td>
+          <td></td>
+          <td></td>
+          </tr>  -->
+        </tbody>
       </table>
     </div>
-    <div class="section-tableaux">
-      <h2>Liste des revenues</h2>
-      <table class="table">
-        <tr>
+    <div class="modal" id="modalRevenu">
+      <div class="modal-content">
+        <span class="close" id="closeModalRevenu"> X </span>
+
+<div class="logo">
+      <img src="./Images/Group 5.png" alt="" class="img" />
+
+      <span>Gestion du budget</span>
+    </div>
+    <div class="formulaire">
+      <h1 class="title-form" >Ajouter revenu</h1>
+                <p class="error" id="errorRevenu"></p>
+
+          <form action="" class="form-control">
+        <div class="input">
+          <label for="ajoutRevenu">Titre</label> <br />
+          <input type="text" name="ajoutRevenu" id="ajoutRevenu" class="champ" required/>
+          <p class="error" id="errorTitle"></p>
+        </div>
+
+        <div class="input">
+          <label for="montantRevenu">Montant</label> <br />
+          <input type="number" placeholder="FCFA" id="montantRevenu" class="champ" required/>
+          <p class="error" id="errorMontantRevenu"></p>
+        </div>
+<div class="input">        <input type="submit" value="VALIDER" id="boutonAjoutRevenu" />
+</div>      </form>
+    </div>
+
+      </div>
+    </div>
+    <div class="section-tableaux" id="tableauRevenu" >
+      <!-- <h2>Liste des revenues</h2> -->
+      <table class="tableRevenu">
+       <thead> <tr>
           <th>Titre</th>
           <th>Montant</th>
           <th>Actions</th>
-        </tr>
-        <tr>
+        </tr></thead>
+       <tbody class="tbodyRevenu">
+         <!-- <tr>
           <td>Salaire</td>
           <td>300.000FCFA</td>
           <td>
             <button class="btn"><a href="">supprimer</a></button>
           </td>
-        </tr>
-        <tr>
+        </tr> -->
+        <!-- <tr>
           <td>Business</td>
           <td>100.000FCFA</td>
           <td>
             <button class="btn"><a href="">supprimer</a></button>
           </td>
-        </tr>
-        <tr>
+        </tr> -->
+        <!-- <tr>
           <td>Bonus</td>
           <td>30.000FCFA</td>
           <td>
             <button class="btn"><a href="">supprimer</a></button>
           </td>
-        </tr>
-        <!-- <tr>
-          <td >
-            <span class="ajout-rv"
-              >Ajouter revenu
-              <button class="btn2"><i class="fa-solid fa-plus"></i></button>
-            </span>
-          </td>
         </tr> -->
+        <!-- <tr>
+          <td>
+            <span class="ajout-rv">Ajouter revenu </span>
+            <button class="btn2">
+              <a href="./ajout-revenu.html"
+                ><i class="fa-solid fa-plus icone"></i
+              ></a>
+            </button>
+          </td>
+          <td></td>
+          <td></td>
+        </tr> -->
+      </tbody>
       </table>
-    </div>  
+    </div> 
+    <script src="script2.js"></script>
   </body>
 </html>
